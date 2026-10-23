@@ -1,0 +1,5 @@
+# Each workstream folder is owned by its workstream leader.
+# GitHub requests their review automatically on any PR that touches the folder.
+# Add one line per workstream as new workstream folders are created (see WORKSTREAMS.md).
+
+/ws-10-integrity/   @sapna0310
