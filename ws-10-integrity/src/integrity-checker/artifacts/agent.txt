@@ -1,0 +1,1 @@
+Support agent; tool=faq-search; policy=read-only

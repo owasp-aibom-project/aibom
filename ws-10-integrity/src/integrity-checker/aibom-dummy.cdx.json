@@ -1,0 +1,221 @@
+{
+  "bomFormat": "CycloneDX",
+  "specVersion": "1.7",
+  "version": 1,
+  "components": [
+    {
+      "bom-ref": "model:support", "type": "machine-learning-model",
+      "name": "Support model", "version": "1.0.0",
+      "description": "Text-only stand-in for a model artifact. No real model weights or training provenance are supplied.",
+      "properties": [
+        {"name": "demo:evidence:publisher_identity", "value": "SELF_ASSERTED"},
+        {"name": "demo:evidence:artifact_integrity", "value": "NOT_CHECKED"},
+        {"name": "demo:evidence:provider_artifact_signature", "value": "ABSENT"},
+        {"name": "demo:evidence:lineage", "value": "PARTIAL"},
+        {"name": "demo:evidence:training_data_provenance", "value": "UNKNOWN"},
+        {"name": "demo:evidence:independent_attestation", "value": "NONE"}
+      ],
+      "hashes": [{"alg": "SHA-256", "content": "1111111111111111111111111111111111111111111111111111111111111111"}]
+    },
+    {
+      "bom-ref": "dataset:tickets", "type": "data",
+      "name": "Synthetic support tickets", "version": "1.0.0",
+      "description": "Two synthetic records used only to demonstrate byte integrity.",
+      "data": [{"type": "dataset", "name": "Synthetic support tickets"}],
+      "properties": [
+        {"name": "demo:evidence:publisher_identity", "value": "SELF_ASSERTED"},
+        {"name": "demo:evidence:artifact_integrity", "value": "NOT_CHECKED"},
+        {"name": "demo:evidence:provider_artifact_signature", "value": "ABSENT"},
+        {"name": "demo:evidence:lineage", "value": "PARTIAL"},
+        {"name": "demo:evidence:training_data_provenance", "value": "SELF_ASSERTED"},
+        {"name": "demo:evidence:independent_attestation", "value": "NONE"}
+      ],
+      "hashes": [{"alg": "SHA-256", "content": "2222222222222222222222222222222222222222222222222222222222222222"}]
+    },
+    {
+      "bom-ref": "adapter:tone", "type": "machine-learning-model",
+      "name": "Tone adapter", "version": "1.0.0",
+      "description": "Declared adapter only; no weight file or digest supplied.",
+      "properties": [
+        {"name": "demo:kind", "value": "lora-adapter"},
+        {"name": "demo:evidence:publisher_identity", "value": "SELF_ASSERTED"},
+        {"name": "demo:evidence:artifact_integrity", "value": "NOT_CHECKED"},
+        {"name": "demo:evidence:provider_artifact_signature", "value": "ABSENT"},
+        {"name": "demo:evidence:lineage", "value": "SELF_ASSERTED"},
+        {"name": "demo:evidence:training_data_provenance", "value": "UNKNOWN"},
+        {"name": "demo:evidence:independent_attestation", "value": "NONE"}
+      ],
+      "hashes": [{"alg": "SHA-256", "content": "3333333333333333333333333333333333333333333333333333333333333333"}]
+    },
+    {
+      "bom-ref": "agent:support", "type": "application",
+      "name": "Support agent", "version": "1.0.0",
+      "description": "Local text definition; no running agent or verified behavior is supplied.",
+      "properties": [
+        {"name": "demo:kind", "value": "ai-agent"},
+        {"name": "demo:evidence:publisher_identity", "value": "SELF_ASSERTED"},
+        {"name": "demo:evidence:artifact_integrity", "value": "NOT_CHECKED"},
+        {"name": "demo:evidence:provider_artifact_signature", "value": "ABSENT"},
+        {"name": "demo:evidence:lineage", "value": "UNKNOWN"},
+        {"name": "demo:evidence:training_data_provenance", "value": "NOT_APPLICABLE"},
+        {"name": "demo:evidence:independent_attestation", "value": "NONE"}
+      ],
+      "hashes": [{"alg": "SHA-256", "content": "4444444444444444444444444444444444444444444444444444444444444444"}]
+    },
+    {
+      "bom-ref": "card:support", "type": "file",
+      "name": "Support agent card", "version": "1.0.0",
+      "description": "Agent Card inventory declaration only; no card bytes or endpoint supplied.",
+      "properties": [
+        {"name": "demo:kind", "value": "a2a-agent-card"},
+        {"name": "demo:evidence:publisher_identity", "value": "SELF_ASSERTED"},
+        {"name": "demo:evidence:artifact_integrity", "value": "NOT_CHECKED"},
+        {"name": "demo:evidence:provider_artifact_signature", "value": "ABSENT"},
+        {"name": "demo:evidence:lineage", "value": "UNKNOWN"},
+        {"name": "demo:evidence:training_data_provenance", "value": "NOT_APPLICABLE"},
+        {"name": "demo:evidence:independent_attestation", "value": "NONE"}
+      ],
+      "hashes": [{"alg": "SHA-256", "content": "5555555555555555555555555555555555555555555555555555555555555555"}]
+    },
+    {
+      "bom-ref": "policy:read-only", "type": "file",
+      "name": "Read-only policy", "version": "1.0.0",
+      "description": "Policy declaration only; enforcement is not verified.",
+      "properties": [
+        {"name": "demo:kind", "value": "policy"},
+        {"name": "demo:evidence:publisher_identity", "value": "SELF_ASSERTED"},
+        {"name": "demo:evidence:artifact_integrity", "value": "NOT_CHECKED"},
+        {"name": "demo:evidence:provider_artifact_signature", "value": "ABSENT"},
+        {"name": "demo:evidence:lineage", "value": "UNKNOWN"},
+        {"name": "demo:evidence:training_data_provenance", "value": "NOT_APPLICABLE"},
+        {"name": "demo:evidence:independent_attestation", "value": "NONE"}
+      ],
+      "hashes": [{"alg": "SHA-256", "content": "6666666666666666666666666666666666666666666666666666666666666666"}]
+    },
+    {
+      "bom-ref": "runtime:python", "type": "platform",
+      "name": "Python runtime", "version": "3.14",
+      "description": "Illustrative runtime requirement, not an attestation of the current machine.",
+      "properties": [
+        {"name": "demo:evidence:publisher_identity", "value": "SELF_ASSERTED"},
+        {"name": "demo:evidence:artifact_integrity", "value": "NOT_CHECKED"},
+        {"name": "demo:evidence:provider_artifact_signature", "value": "ABSENT"},
+        {"name": "demo:evidence:lineage", "value": "UNKNOWN"},
+        {"name": "demo:evidence:training_data_provenance", "value": "NOT_APPLICABLE"},
+        {"name": "demo:evidence:independent_attestation", "value": "NONE"}
+      ],
+      "hashes": [{"alg": "SHA-256", "content": "7777777777777777777777777777777777777777777777777777777777777777"}]
+    },
+    {
+      "bom-ref": "model:translation", "type": "machine-learning-model",
+      "name": "Translation base model", "version": "1.0.0",
+      "description": "Independent fictional base model adapted with the translation LoRA. No weights supplied.",
+      "properties": [
+        {"name": "demo:evidence:publisher_identity", "value": "SELF_ASSERTED"},
+        {"name": "demo:evidence:artifact_integrity", "value": "NOT_CHECKED"},
+        {"name": "demo:evidence:provider_artifact_signature", "value": "ABSENT"},
+        {"name": "demo:evidence:lineage", "value": "UNKNOWN"},
+        {"name": "demo:evidence:training_data_provenance", "value": "UNKNOWN"},
+        {"name": "demo:evidence:independent_attestation", "value": "NONE"}
+      ],
+      "hashes": [{"alg": "SHA-256", "content": "bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"}]
+    },
+    {
+      "bom-ref": "dataset:translation", "type": "data",
+      "name": "Translation examples", "version": "1.0.0",
+      "description": "Fictional dataset used to train the translation adapter; unrelated to support tickets.",
+      "data": [{"type": "dataset", "name": "Translation examples"}],
+      "properties": [
+        {"name": "demo:evidence:publisher_identity", "value": "SELF_ASSERTED"},
+        {"name": "demo:evidence:artifact_integrity", "value": "NOT_CHECKED"},
+        {"name": "demo:evidence:provider_artifact_signature", "value": "ABSENT"},
+        {"name": "demo:evidence:lineage", "value": "PARTIAL"},
+        {"name": "demo:evidence:training_data_provenance", "value": "SELF_ASSERTED"},
+        {"name": "demo:evidence:independent_attestation", "value": "NONE"}
+      ],
+      "hashes": [{"alg": "SHA-256", "content": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"}]
+    },
+    {
+      "bom-ref": "adapter:translation-lora", "type": "machine-learning-model",
+      "name": "Translation LoRA", "version": "1.0.0",
+      "description": "Fictional LoRA trained from the translation base model and translation examples. No adapter bytes supplied.",
+      "properties": [
+        {"name": "demo:kind", "value": "lora-adapter"},
+        {"name": "demo:evidence:publisher_identity", "value": "SELF_ASSERTED"},
+        {"name": "demo:evidence:artifact_integrity", "value": "NOT_CHECKED"},
+        {"name": "demo:evidence:provider_artifact_signature", "value": "ABSENT"},
+        {"name": "demo:evidence:lineage", "value": "SELF_ASSERTED"},
+        {"name": "demo:evidence:training_data_provenance", "value": "SELF_ASSERTED"},
+        {"name": "demo:evidence:independent_attestation", "value": "NONE"}
+      ],
+      "hashes": [{"alg": "SHA-256", "content": "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd"}]
+    },
+    {
+      "bom-ref": "agent:translation", "type": "application",
+      "name": "Translation agent", "version": "1.0.0",
+      "description": "Uses the translation base model with its LoRA as a fine-tuned configuration. No merged model or live agent is claimed.",
+      "properties": [
+        {"name": "demo:kind", "value": "ai-agent"},
+        {"name": "demo:evidence:publisher_identity", "value": "SELF_ASSERTED"},
+        {"name": "demo:evidence:artifact_integrity", "value": "NOT_CHECKED"},
+        {"name": "demo:evidence:provider_artifact_signature", "value": "ABSENT"},
+        {"name": "demo:evidence:lineage", "value": "UNKNOWN"},
+        {"name": "demo:evidence:training_data_provenance", "value": "NOT_APPLICABLE"},
+        {"name": "demo:evidence:independent_attestation", "value": "NONE"}
+      ],
+      "hashes": [{"alg": "SHA-256", "content": "eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"}]
+    }
+  ],
+  "services": [
+    {
+      "bom-ref": "tool:faq", "name": "FAQ search", "version": "1.0.0",
+      "description": "Declared read-only FAQ lookup tool; no live API is contacted.",
+      "properties": [
+        {"name": "demo:kind", "value": "agent-tool"},
+        {"name": "demo:evidence:publisher_identity", "value": "SELF_ASSERTED"},
+        {"name": "demo:evidence:artifact_integrity", "value": "NOT_CHECKED"},
+        {"name": "demo:evidence:provider_artifact_signature", "value": "ABSENT"},
+        {"name": "demo:evidence:lineage", "value": "UNKNOWN"},
+        {"name": "demo:evidence:training_data_provenance", "value": "NOT_APPLICABLE"},
+        {"name": "demo:evidence:independent_attestation", "value": "NONE"}
+      ],
+      "hashes": [{"alg": "SHA-256", "content": "8888888888888888888888888888888888888888888888888888888888888888"}]
+    },
+    {
+      "bom-ref": "mcp:faq", "name": "FAQ MCP server", "version": "1.0.0",
+      "description": "Declared MCP server; no process, discovery, or protocol verification.",
+      "properties": [
+        {"name": "demo:kind", "value": "mcp-server"},
+        {"name": "demo:evidence:publisher_identity", "value": "SELF_ASSERTED"},
+        {"name": "demo:evidence:artifact_integrity", "value": "NOT_CHECKED"},
+        {"name": "demo:evidence:provider_artifact_signature", "value": "ABSENT"},
+        {"name": "demo:evidence:lineage", "value": "UNKNOWN"},
+        {"name": "demo:evidence:training_data_provenance", "value": "NOT_APPLICABLE"},
+        {"name": "demo:evidence:independent_attestation", "value": "NONE"}
+      ],
+      "hashes": [{"alg": "SHA-256", "content": "9999999999999999999999999999999999999999999999999999999999999999"}]
+    },
+    {
+      "bom-ref": "service:gateway", "name": "Support gateway", "version": "1.0.0",
+      "description": "Illustrative ingress service.",
+      "properties": [
+        {"name": "demo:evidence:publisher_identity", "value": "SELF_ASSERTED"},
+        {"name": "demo:evidence:artifact_integrity", "value": "NOT_CHECKED"},
+        {"name": "demo:evidence:provider_artifact_signature", "value": "ABSENT"},
+        {"name": "demo:evidence:lineage", "value": "UNKNOWN"},
+        {"name": "demo:evidence:training_data_provenance", "value": "NOT_APPLICABLE"},
+        {"name": "demo:evidence:independent_attestation", "value": "NONE"}
+      ],
+      "hashes": [{"alg": "SHA-256", "content": "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"}]
+    }
+  ],
+  "dependencies": [
+    {"ref": "model:support", "dependsOn": ["dataset:tickets"]},
+    {"ref": "adapter:tone", "dependsOn": ["model:support"]},
+    {"ref": "agent:support", "dependsOn": ["model:support", "adapter:tone", "card:support", "tool:faq", "policy:read-only", "runtime:python"]},
+    {"ref": "tool:faq", "dependsOn": ["mcp:faq"]},
+    {"ref": "service:gateway", "dependsOn": ["agent:support"]},
+    {"ref": "adapter:translation-lora", "dependsOn": ["model:translation", "dataset:translation"]},
+    {"ref": "agent:translation", "dependsOn": ["model:translation", "adapter:translation-lora"]}
+  ]
+}

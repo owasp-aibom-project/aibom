@@ -1,3 +1,3 @@
 # Integrity Checker tests
 
-Tests for the code in [`../src/`](../src/). Add instructions for running them alongside the first tests.
+Tests for the code in [`../src/`](../src/). See the [Integrity Checker guide](../docs/integrity-checker/README.md) for test instructions.

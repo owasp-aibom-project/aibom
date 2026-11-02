@@ -22,6 +22,10 @@ Standard, checks and tooling for verifying the integrity of an AIBOM.
 | [`docs/`](docs/) | The integrity standard, check definitions, workbook and user guides |
 | [`assets/`](assets/) | Logos, images and diagrams used by the docs |
 
+## Integrity Checker
+
+The [Integrity Checker guide](docs/integrity-checker/README.md) describes how to run the desktop application and its tests. The demo compares fabricated hash declarations and is not a security control.
+
 ## How to contribute
 
 Branch from `main` as `ws-10/<short-description>`, keep changes inside `ws-10-integrity/`, and open a pull request with `Closes #<issue>`. The workstream leader is requested as a reviewer automatically. See [WORKSTREAMS.md](../WORKSTREAMS.md) for the full flow.

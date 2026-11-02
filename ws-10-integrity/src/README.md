@@ -1,3 +1,3 @@
 # Integrity Checker source
 
-Source code for the Integrity Checker calculator ([#19](https://github.com/owasp-aibom-project/aibom/issues/19)). Add a short note here on how to install and run it once the first version lands.
+Source code for the Integrity Checker calculator ([#19](https://github.com/owasp-aibom-project/aibom/issues/19)). The [Integrity Checker](integrity-checker/) is a simulation; see its [guide](../docs/integrity-checker/README.md) for installation and usage.
